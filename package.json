@@ -4,8 +4,9 @@
   "description": "job search",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon listen.js",
-    "test": "mocha spec"
+    "test": "mocha spec",
+    "start": "node listen.js",
+    "dev": "nodemon listen.js"
   },
   "keywords": [],
   "author": "",
