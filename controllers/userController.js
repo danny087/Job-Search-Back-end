@@ -1,6 +1,6 @@
 const User = require("../models/user")
 const Job = require("../models/jobs")
-const bcrypt = require('bcrypt')
+const bcrypt = require('bcryptjs')
 const _ = require('lodash')
 const jwt = require('jsonwebtoken')
 const mongoose = require('mongoose')
