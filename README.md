@@ -14,9 +14,9 @@ I will take you through every endpoint and show you exactly what each one does.
 
 We will start with the user Route.
 
-#USER
+# USER
 
-##POST:  /users
+## POST:  /users
 
 This endpoint adds a new user
 
@@ -40,10 +40,10 @@ Here is a user object example when created:
   You will also receive a 400 if you use an invaild email.
   
   
-  ##POST: /users/login
+  ## POST: /users/login
   
   
-  THis endpoint logs a user in.
+  This endpoint logs a user in.
   
   When making this request, first it will check to see if the email and password exist.
   
@@ -55,7 +55,7 @@ Here is a user object example when created:
   
   
   
-  ##POST: /users/:job_id/:user_id
+  ## POST: /users/:job_id/:user_id
   
   The can apply for jobs with this request.
   
@@ -65,7 +65,7 @@ Here is a user object example when created:
   
   
   
-  ##PUT: /users:user_id/cv
+  ## PUT: /users:user_id/cv
   
   You can make your CV with this request. The CV starts off as an empty string when your user object is created, you can create your cv so the company you applied for can see the job you applied for and then see if your cv matches the requirements for the job.
   
@@ -74,22 +74,22 @@ Here is a user object example when created:
   
   
   
-  #COMPANIES
+  # COMPANIES
   
   
-  ##GET: /companies
+  ## GET: /companies
   
   This endpoint will get you all of the companies
   
   
-  ##GET: /companies/:comany_name/jobs
+  ## GET: /companies/:comany_name/jobs
   
   
   This endpoint will get you all the jobs that belong to a certain company.
   
   
   
-  ##POST: /companies
+  ## POST: /companies
   
   This endpoint allows you to make a new company 
   
@@ -102,7 +102,7 @@ Here is a user object example when created:
   
   
   
-  ##POST: /companies/:company_name/jobs
+  ## POST: /companies/:company_name/jobs
   
   
   This endpoint allows the companies too create a job.
@@ -133,7 +133,7 @@ Here is a user object example when created:
      
      
      
- ##PUT: /companies/:job_id/:user_id
+ ## PUT: /companies/:job_id/:user_id
  
  
  With this endpoint the company can put unsuccessful applicants into one array and successful applicants into another array.
@@ -147,15 +147,15 @@ Here is a user object example when created:
  
  
  
-#JOBS
+# JOBS
 
 
-##GET: /jobs
+## GET: /jobs
 
 This endpoint gets all the jobs.
 
 
-##GET: /jobs/:jobLocation/location
+## GET: /jobs/:jobLocation/location
 
 This endpoint will get you all the jobs by the desired location. If you type in Manchester all the jobs in Manchester will be queried.
 
@@ -167,12 +167,12 @@ You will receive an error if you choose a location that does not have any jobs.
 
 
 
-##GET: /jobs/:jobs_id
+## GET: /jobs/:jobs_id
 
 This endpoint will get you the amount of applicants that have applied for this job.
 
 
-##PUT: /jobs/:jobs_id
+## PUT: /jobs/:jobs_id
 
 This endpoint allows you to change the status of the job to true to false.
 
@@ -180,7 +180,7 @@ If true the job will be live and users will be able to apply to the job and if f
 
 
 
-##DELETE: /jobs/:job_id
+## DELETE: /jobs/:job_id
 
 This endpoint allows you to delete a job.
 
